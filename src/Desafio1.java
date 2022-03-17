@@ -57,8 +57,7 @@ public class Desafio1 {
             }
         }
 
-
-
+        read.close();
 
     }
 
