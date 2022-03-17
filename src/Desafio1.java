@@ -19,19 +19,10 @@ public class Desafio1 {
 
         int[] totalNumeros = new int[n];
 
-        int contadorPares = 0;
-        int contadorImpares = 0;
 
         //Armazenando os Valores
         for(int i = 0; i < n ; i++) {
             totalNumeros[i] = read.nextInt();
-            if (totalNumeros[i] % 2 == 0) {
-                contadorPares += 1;
-                System.out.println("Pares: " + contadorPares);
-            } else {
-                contadorImpares += 1;
-                System.out.println("Impares: " + contadorImpares);
-            }
         }
 
         Arrays.sort(totalNumeros);
@@ -60,7 +51,10 @@ public class Desafio1 {
 
         for(int i = 0; i < impares.length;i++) {
             impares[i]=-impares[i];
-            System.out.println(impares[i]);
+
+            if(impares[i] != 0){
+                System.out.println(impares[i]);
+            }
         }
 
 
